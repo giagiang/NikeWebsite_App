@@ -8,7 +8,7 @@ export default {
     fontSize: {
       xs: ['12px', '16px'],
       sm: ['14px', '20px'],
-      base: ['16px', '19.5px'],
+      base: ['16px', '19.5px'], // 1 rem = 16px -> 4rem = 64px
       lg: ['18px', '21.94px'],
       xl: ['20px', '24.38px'],
       '2xl': ['24px', '29.26px'],
@@ -36,6 +36,7 @@ export default {
         'card': "url('assets/images/thumbnail-background.svg')",
       },
       screens: {
+        // additional breakpoint for screen with width >= 1440px
         "wide": "1440px"
       }
     },

@@ -1,12 +1,13 @@
-import React from "react";
+import React,{useState} from "react";
 import Button from "../components/Button";
-import ShoeCard from "../components/ShoeCard"
+import ShoeCard from "../components/ShoeCard";
 import { arrowRight } from "../assets/icons";
 import { statistics } from "../constants";
 import { bigShoe1 } from "../assets/images";
-import { shoes } from "../constants"; 
+import { shoes } from "../constants";
 
 const Hero = () => {
+  const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
   return (
     <section
       id="home"
@@ -27,7 +28,7 @@ const Hero = () => {
           Discover stylish Nike arrival, quality comfort, and innovation for
           your active life.
         </p>
-        <Button label="Shop Now" iconUrl={arrowRight}/>
+        <Button label="Shop Now" iconUrl={arrowRight} />
         <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-16">
           {statistics.map((stat, index) => (
             <div key={index}>
@@ -39,24 +40,28 @@ const Hero = () => {
           ))}
         </div>
       </div>
-      <div className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center ">
-        <img 
-          src={bigShoe1}
-          alt= "shoe collection"
+      <div className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center">
+        <img
+          src={bigShoeImg}
+          alt="shoe collection"
           width={610}
-          height={500}
+          height={502}
           className="object-contain relative z-10"
-          />
-          
-      </div>
-       
+        />
+
+
       <div>
-      {shoes.map(()=>(
-        <div key={shoes}>
-          <ShoeCard/>
-        </div>
-      ))}
-        </div>
+        {shoes.map((shoe) => (
+          <div key={shoe}>
+            <ShoeCard
+              imgURL={shoe}
+              changeBigShoeImage={(shoe) => {setBigShoeImg(shoe)}}
+              bigShoeImg = {bigShoeImg}
+            />
+          </div>
+        ))}
+      </div>
+      </div>
     </section>
   );
 };

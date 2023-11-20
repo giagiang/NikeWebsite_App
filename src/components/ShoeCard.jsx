@@ -1,9 +1,31 @@
-import React from 'react'
+import React from "react";
 
-const ShoeCard = () => {
+const ShoeCard = ({ imgURL, changeBigShoeImage, bigShoeImg }) => {
+  const handleClick = () => {
+    if (bigShoeImg !== imgURL.bigShoe) {
+      changeBigShoeImage(imgURL.bigShoe);
+    }
+  };
   return (
-    <div>ShoeCard</div>
-  )
-}
+    <div
+      className={`border-2  rounded-xl 
+    ${
+      bigShoeImg === imgURL ? "border-coral-red" : "border-transparent"
+    } cusror-pointer max-sm:flex-1`}
+      onClick={handleClick}
+    >
+      <div className="flex justify-center  items-center bg-card  bg-center sm:w-40 sm:h-40 rounded-xl max-sm:p-4">
 
-export default ShoeCard
+        <img
+          src={imgURL.thumbnail}
+          alt="shoe collection"
+          width={127}
+          height={103}
+          className="object-contain"
+        />
+      </div>
+    </div>
+  );
+};
+
+export default ShoeCard;

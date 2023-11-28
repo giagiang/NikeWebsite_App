@@ -7,7 +7,7 @@ import {
   SpecialOffer,
   Subscribe,
   SuperQuality,
-} from "./sections";
+} from "src/sections"; // relat path .. 
 import Nav from "./components/Nav";
 const App = () => {
   return (

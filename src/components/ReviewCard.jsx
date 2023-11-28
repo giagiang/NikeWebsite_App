@@ -1,5 +1,5 @@
 import React from "react";
-import {star} from '../assets/icons'
+import {star} from 'src/assets/icons'
 
 const ReviewCard = ({imgURL, customerName, rating, feedback}) => {
   return (

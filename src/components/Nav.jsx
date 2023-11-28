@@ -1,7 +1,8 @@
 import React from "react";
-import { headerLogo } from "../assets/images";
-import { hamburger } from "../assets/icons";
-import { navLinks } from "../constants";
+import { headerLogo } from "src/assets/images";
+import { hamburger } from "src/assets/icons";
+import { navLinks } from "src/constants";
+
 const Nav = () => {
   return (
     <header className="padding-x py-7 absolute z-10 w-full">

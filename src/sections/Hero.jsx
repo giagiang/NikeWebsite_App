@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Button from "../components/Button";
-import ShoeCard from "../components/ShoeCard";
-import { arrowRight } from "../assets/icons";
-import { statistics } from "../constants";
-import { bigShoe1 } from "../assets/images";
-import { shoes } from "../constants";
+import Button from "src/components/Button";
+import ShoeCard from "src/components/ShoeCard";
+import { arrowRight } from "src/assets/icons";
+import { statistics } from "src/constants";
+import { bigShoe1 } from "src/assets/images";
+import { shoes } from "src/constants";
 
 const Hero = () => {
   const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);

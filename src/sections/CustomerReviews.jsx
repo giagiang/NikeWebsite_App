@@ -1,6 +1,6 @@
 import React from 'react'
-import ReviewCard from '../components/ReviewCard'
-import {reviews} from '../constants';
+import ReviewCard from 'src/components/ReviewCard'
+import {reviews} from 'src/constants';
 function CustomerReviews() {
   return (
     <section className = "max-container"> 

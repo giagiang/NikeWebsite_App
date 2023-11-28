@@ -1,7 +1,7 @@
 import React from "react";
-import { footerLogo } from "../assets/images";
-import { footerLinks, socialMedia } from "../constants";
-import { copyrightSign } from "../assets/icons";
+import { footerLogo } from "src/assets/images";
+import { footerLinks, socialMedia } from "src/constants";
+import { copyrightSign } from "src/assets/icons";
 const Footer = () => {
   return (
     <footer className="max-container">

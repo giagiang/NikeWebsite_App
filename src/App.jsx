@@ -7,7 +7,7 @@ import {
   SpecialOffer,
   Subscribe,
   SuperQuality,
-} from "./sections"; // áolu
+} from "src/sections"; // áolu
 import Nav from "./components/Nav";
 const App = () => {
   return (

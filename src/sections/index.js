@@ -1,6 +1,6 @@
 import CustomerReviews from "./CustomerReviews";
 import Footer from "./Footer";
-import Hero from "./Hero";
+import Hero from "./hero";
 import PopularProducts from "./PopularProducts";
 import Services from "./Services";
 import SpecialOffer from "./SpecialOffer";
